@@ -13,82 +13,92 @@
         font-size: 80px;
         text-align: center;
       }
-      #active {
-        color:red;
-      }
-     .saw {
-       color:gray;
-     }
      h1{
        border-bottom: 5px blue solid;
        margin:0px;
        padding:10px;
      }
-     ol{
+     #lee ol{
        border-right: 5px solid green;
-       width:100px;
+       width:80px;
        margin:0px;
        padding:30px;
+       padding-left: 50px;
      }
      body{
        margin:0px;
      }
-
+     #lee{
+       display: grid;
+       grid-template-columns: 150px 1fr 150px;
+     }
+     #lul{
+       border-left: 5px green solid;
+     }
+     #css{
+       text-align: center;
+       padding-top: 15px;
+     }
     </style>
   </head>
   <body>
     <h1>css</h1>
-    <ol>
-      <li><a href="댓글.html" target="_blank" title="댓글" style="color:black; text-decoration:underline overline;">댓글</a><br></li>
-      <li><a href="링크.html" target="_blank" title="링크" class="saw">링크</a><br></li>
-      <li><a href="목차.html" target="_blank" title="목차" class="saw" id="active">목차</a><br></li>
-      <li><a href="채팅.html" target="_blank" title="채팅">채팅</a><br></li>
-      <li><a href="체크박스.html" target="_blank" title="체크박스">체크박스</a><br></li>
-      <li><a href="HTML.html" target="_blank" title="HTML">HTML</a><br></li>
-   </ol>
-      <h2>css 지정방법</h2><br>
-        1.style <br>
-        a{<br>
-          <br>
-        }<br>
-        선택한 태그들에 영향, 선택자라고함<br>
-        /style<br>
-        2.특정한 태그에 스타일태그 입력<br>
-      <h2>글 장식 없애기 ex)밑줄</h2><br>
-        text-decoration: none;
-      <h2>;세미클론은 줄을 구분해줌</h2><br>
-      <h2>text-decoration: 종류</h2><br>
-        none :  글자의 장식을 지정하지 않고, 기본 스타일로 출력된다.<br>
-        underline : 텍스트에 밑줄을 지정<br>
-        overline : 텍스트에 윗줄을 지정<br>
-        line-through : 텍스트 가운데 줄이 그어지도록 지정<br>
-        blink : 텍스트를 깜빡거리게 지정(현재는 없어진듯)<br>
-        inherit:부모속성 물려받음<br>
-      <h2>css글자크기조절</h2><br>
-        <h3>font-size:종류</h3>
-          1.기본값 medium<br>
-          2.medium : 웹브라우저에서 정한 기본 글자크기입니다.<br>
-            &nbsp xx-small, x-small, small, large, x-large, xx-large : medium에 대한 상대적인 크기입니다.<br>
-            &nbsp smaller, larger : 부모 요소의 글자 크기에 대한 상대적인 글자 크기입니다.<br>
-            &nbsp length : px, %, em, rem 등으로 크기를 정합니다.<br>
-            &nbsp initial : 기본값으로 설정합니다.<br>
-            &nbsp inherit : 부모 요소의 속성값을 상속받습니다.<br>
-          3.px : 픽셀<br>
-            &nbsp %, em : 부모 요소에 대한 상대적인 크기, 각각 100%, 1em이 부모요소의 크기<br>
-            &nbsp rem : html요소의 글자 크기에 대한 상대적인 글자 크기<br>
-      <h2>효과의 발동 우선순위</h2><br>
-        <h3>id 선택자>class 선택자>태그 선택자 / 동일한 선택자라면 나중에 쓰인것이 적용된다.</h3><br>
-        1. id 선택자<br>
-        &nbsp 문서에서 1번밖에 쓸 수 없음, 사용형태 ex) #a{} - id="a"<br>
-        2. class 선택자<br>
-        &nbsp 집단을 지정할 수 있음, 사용형태 ex) .a{} - class="a"<br>
-        3. 태그 선택자<br>
-        &nbsp 일반적인 css효과, 사용형태 a{} - 모든 a태그에 적용<br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-
+    <div id="lee">
+        <ol>
+          <li><a href="댓글.html" target="_blank" title="댓글" style="color:black; text-decoration:underline overline;">댓글</a><br></li>
+          <li><a href="링크.html" target="_blank" title="링크">링크</a><br></li>
+          <li><a href="목차.html" target="_blank" title="목차>목차</a><br></li>
+          <li><a href="채팅.html" target="_blank" title="채팅">채팅</a><br></li>
+          <li><a href="체크박스.html" target="_blank" title="체크박스">체크박스</a><br></li>
+          <li><a href="HTML.html" target="_blank" title="HTML">HTML</a><br></li>
+       </ol>
+      <div id="css">
+          <h2>css 지정방법</h2><br>
+            1.style <br>
+            a{<br>
+              <br>
+            }<br>
+            선택한 태그들에 영향, 선택자라고함<br>
+            /style<br>
+            2.특정한 태그에 스타일태그 입력<br>
+          <h2>글 장식 없애기 ex)밑줄</h2><br>
+            text-decoration: none;
+          <h2>;세미클론은 줄을 구분해줌</h2><br>
+          <h2>text-decoration: 종류</h2><br>
+            none :  글자의 장식을 지정하지 않고, 기본 스타일로 출력된다.<br>
+            underline : 텍스트에 밑줄을 지정<br>
+            overline : 텍스트에 윗줄을 지정<br>
+            line-through : 텍스트 가운데 줄이 그어지도록 지정<br>
+            blink : 텍스트를 깜빡거리게 지정(현재는 없어진듯)<br>
+            inherit:부모속성 물려받음<br>
+          <h2>css글자크기조절</h2><br>
+            <h3>font-size:종류</h3>
+              1.기본값 medium<br>
+              2.medium : 웹브라우저에서 정한 기본 글자크기입니다.<br>
+                &nbsp xx-small, x-small, small, large, x-large, xx-large : medium에 대한 상대적인 크기입니다.<br>
+                &nbsp smaller, larger : 부모 요소의 글자 크기에 대한 상대적인 글자 크기입니다.<br>
+                &nbsp length : px, %, em, rem 등으로 크기를 정합니다.<br>
+                &nbsp initial : 기본값으로 설정합니다.<br>
+                &nbsp inherit : 부모 요소의 속성값을 상속받습니다.<br>
+              3.px : 픽셀<br>
+                &nbsp %, em : 부모 요소에 대한 상대적인 크기, 각각 100%, 1em이 부모요소의 크기<br>
+                &nbsp rem : html요소의 글자 크기에 대한 상대적인 글자 크기<br>
+          <h2>효과의 발동 우선순위</h2><br>
+            <h3>id 선택자>class 선택자>태그 선택자 / 동일한 선택자라면 나중에 쓰인것이 적용된다.</h3><br>
+            1. id 선택자<br>
+            &nbsp 문서에서 1번밖에 쓸 수 없음, 사용형태 ex) #a{} - id="a"<br>
+            2. class 선택자<br>
+            &nbsp 집단을 지정할 수 있음, 사용형태 ex) .a{} - class="a"<br>
+            3. 태그 선택자<br>
+            &nbsp 일반적인 css효과, 사용형태 a{} - 모든 a태그에 적용<br>
+                <br>
+                <br>
+                <br>
+                <br>
+      </div>
+      <div id="lul">
+        LULULULULULUL
+      </div>
+    </div>
   </body>
 </html>

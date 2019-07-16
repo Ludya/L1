@@ -4,22 +4,50 @@
   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height">
 <head>
 <body>
-<input type="text" size="15"><br>
-<input type="number" size="5"><br>
-<input type="radio" name="sex" value="male">남 <input type="radio" name="sex" value="female">여<br>
-&nbsp;&nbsp;  예 아니오<br>
-1.&nbsp;<input type="checkbox"><input type="checkbox"><br>
-2.&nbsp;<input type="checkbox"><input type="checkbox"><br>
-3.&nbsp;<input type="checkbox"><input type="checkbox"><br>
-4. 좋아하는 색은?<select size="1" name="color">
-  <option>초록색
-  <option>파란색
-  <option>보라색
-</select><br>
-5.다중선택<br>
-<input type="checkbox" name="sports"><input type="checkbox" name="sports"><input type="checkbox" name="sports"m><br>
+  <form action="" method="post">
+    <label for="id">이름 : </label><input id="id" type="text" size="15" name="name"><br>
+    <label>나이 : <input id="age" type="number" size="5" name="age"><br></label>
+    <p>ID:<input type="text" name="id" value="아이디"></p>
+    <p>Password:<input type="password" name="password"></p>
+    성별 : <input type="radio" name="sex" value="male">남 <input type="radio" name="sex" value="female">여<br>
+    &nbsp;&nbsp;  예 아니오<br>
+    1.&nbsp;<input type="radio" name="1" value="yes"><input type="radio" name="1" value="no"><br>
+    2.&nbsp;<input type="radio" name="2" value="yes"><input type="radio" name="2" value="no"><br>
+    3.&nbsp;<input type="radio" name="3" value="yes"><input type="radio" name="3" value="no"><br>
+    4. 좋아하는 색은?<select size="1" name="color">
+      <option>초록색
+      <option>파란색
+      <option>보라색
+    </select><br>
+    5.좋아하는 운동은?(다중선택)<br>
+    <label>축구<input type="checkbox" name="soccer"></label>
+    <label>농구<input type="checkbox" name="basketball"></label>
+    <label>야구<input type="checkbox" name="baseball"m></label><br>
+    <input type="submit"value="완료">
+    <input type="reset"value="다시"><br>
+    <input type="button" value="버튼">
+    <input type="hidden" name="hide" value="Ludya"><br>
+    <input type="image" src="GIF76386385.gif" alt="submit"><br>
+    <input type="file">
+  </form>
 </body>
-<input type="submit"value="완료">
-<input type="reset"value="다시"><br>
+
 radio 단일선택<br>
-checkbox 다중선택
+checkbox 다중선택<br>
+radio에서 같은 name들 중 하나만 선택가능
+<h1>input태그의 type들</h1>
+<ul>
+  <li>text : 글로 입력</li>
+  <li>number : 숫자로 입력</li>
+  <li>radio : 원형 체크박스,같은 name들 중 단일선택만 가능</li>
+  <li>checkbox : 체크박스, 다중선택 가능</li>
+  <li>submit : 제출기능</li>
+  <li>reset : 리셋기능</li>
+  <li>button : 버튼 생성 </li>
+  <li>image : 이미지버튼 생성</li>
+  <li>file : 파일 선택필드 생성</li>
+  <li>hidden : 감춰진 필드</li>
+</ul>
+<h2>method</h2>
+get : URL로 정보전달<br>
+post : 숨겨서 정보전달 가능

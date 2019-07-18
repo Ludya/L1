@@ -2,13 +2,45 @@
 <head>
   <title>설문조사</title>
   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height">
+  <style>
+    body{
+      margin:10px;
+    }
+  </style>
+  <SCRIPT LANGUAGE="JavaScript"><!--
+d = new Date();
+day = d.getDay();
+mon = d.getMonth();
+date = d.getDate();
+year = d.getYear();
+hr = d.getHours();
+min = d.getMinutes();
+
+if(year<1000){year=(""+(year+11900)).substring(1,5);}
+else{year=(""+(year+10000)).substring(1,5);}
+
+if(hr==0){ap=" AM";hr=12}
+else if(hr <= 11){ap=" AM"}
+else if(hr == 12){ap=" PM";hr=12}
+else if(hr >= 13){ap=" PM";hr-=12}
+
+if(min <= 9){min="0"+min}
+
+zday=new Array();
+zday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+zmon=new Array();
+zmon=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+document.write(""+zday[day]+", "+zmon[mon]+" "+date+", "+year+" "+hr+":"+min+ap+"");
+//--></script>
+
 <head>
 <body>
   <form action="" method="post">
-    <label for="id">이름 : </label><input id="id" type="text" size="15" name="name"><br>
-    <label>나이 : <input id="age" type="number" size="5" name="age"><br></label>
-    <p>ID:<input type="text" name="id" value="아이디"></p>
-    <p>Password:<input type="password" name="password"></p>
+    <p><label for="id">이름 : </label><input id="id" type="text" size="15" name="name"><br></p>
+    <p><label>나이 : <input id="age" type="number" size="5" name="age" min="1" max="150"><br></label></p>
+    <p>ID : <input type="text" name="id" value="아이디"></p>
+    <p>Password : <input type="password" name="password"></p>
     성별 : <input type="radio" name="sex" value="male">남 <input type="radio" name="sex" value="female">여<br>
     &nbsp;&nbsp;  예 아니오<br>
     1.&nbsp;<input type="radio" name="1" value="yes"><input type="radio" name="1" value="no"><br>
@@ -30,24 +62,24 @@
     <input type="image" src="GIF76386385.gif" alt="submit"><br>
     <input type="file">
   </form>
-</body>
 
-radio 단일선택<br>
-checkbox 다중선택<br>
-radio에서 같은 name들 중 하나만 선택가능
-<h1>input태그의 type들</h1>
-<ul>
-  <li>text : 글로 입력</li>
-  <li>number : 숫자로 입력</li>
-  <li>radio : 원형 체크박스,같은 name들 중 단일선택만 가능</li>
-  <li>checkbox : 체크박스, 다중선택 가능</li>
-  <li>submit : 제출기능</li>
-  <li>reset : 리셋기능</li>
-  <li>button : 버튼 생성 </li>
-  <li>image : 이미지버튼 생성</li>
-  <li>file : 파일 선택필드 생성</li>
-  <li>hidden : 감춰진 필드</li>
-</ul>
-<h2>method</h2>
-get : URL로 정보전달<br>
-post : 숨겨서 정보전달 가능
+  radio 단일선택<br>
+  checkbox 다중선택<br>
+  radio에서 같은 name들 중 하나만 선택가능
+  <h1>input태그의 type들</h1>
+  <ul>
+    <li>text : 글로 입력</li>
+    <li>number : 숫자로 입력</li>
+    <li>radio : 원형 체크박스,같은 name들 중 단일선택만 가능</li>
+    <li>checkbox : 체크박스, 다중선택 가능</li>
+    <li>submit : 제출기능</li>
+    <li>reset : 리셋기능</li>
+    <li>button : 버튼 생성 </li>
+    <li>image : 이미지버튼 생성</li>
+    <li>file : 파일 선택필드 생성</li>
+    <li>hidden : 감춰진 필드</li>
+  </ul>
+  <h2>method</h2>
+  get : URL로 정보전달<br>
+  post : 숨겨서 정보전달 가능
+</body>

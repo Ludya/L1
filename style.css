@@ -9,9 +9,8 @@ h1{
 }
 #lee ol{
  border-right: 5px solid green;
- width:80px;
  margin:0px;
- padding:30px;
+ padding:25px;
  padding-left: 50px;
 }
 body{
@@ -19,7 +18,7 @@ body{
 }
 #lee{
  display: grid;
- grid-template-columns: 150px 1fr 150px;
+ grid-template-columns: 200px 1fr 150px;
 }
 #lul{
  border-left: 5px green solid;

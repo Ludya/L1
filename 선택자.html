@@ -7,14 +7,70 @@
       div ~ ol{
         color:red;
       }
-      h1:nth-child(3){
+      h2:nth-child(3){
         color:blue;
+      }
+      #CSS{
+        text-align: center;
+        font-size: 80px;
+      }
+      .CSS{
+        text-decoration: none;
+        color: black;
       }
     </style>
     <title></title>
   </head>
   <body>
-    <a href="https://www.youtube.com/channel/UCUj6rrhMTR9pipbAWBAMvUQ"></a>
+    <h1 id="CSS"><a href="css.html" target="_blank"class="CSS">CSS</a></h1>
+    <h2>효과의 발동 우선순위</h2>
+      <h3>id 선택자>class 선택자>태그 선택자 / 동일한 선택자라면 나중에 쓰인것이 적용된다.</h3>
+      <ul>
+        <li><h4>id 선택자</h4></li>
+         문서에서 1번밖에 쓸 수 없음, 사용형태 ex) #a{} - id="a"
+        <li><h4>class 선택자</h4></li>
+         집단을 지정할 수 있음, 사용형태 ex) .a{} - class="a"
+        <li><h4>태그 선택자</h4></li>
+         일반적인 css효과, 사용형태 a{} - 모든 a태그에 적용
+        <li><h4>*</h4></li>
+         본문에 있는 모든 선택자를 지정
+        <li><h4>A *</h4></li>
+         A 밑에 있는 모든태그(A의 하위태그)
+        <li><h4>,</h4></li>
+         선택자를 한번에 여러개 지정함
+        <li><h4>A + B</h4></li>
+         인접한 선택자를 지정해줌, A 바로 다음에 있는 B를 선택
+        <li><h4>A ~ B</h4></li>
+         A 뒤에 있는 모든 B, 부모요소 없어야함
+        <li><h4>A > B</h4></li>
+         A 직계 자식요소인 B를 선택
+        <li><h4>A B</h4></li>
+         A의 자식요소로 있는 모든 B 선택
+        <li><h4>A B:first-child</h4></li>
+         A의 자식요소로 있는 B 중에 첫번째 B를 선택함, A는 중복되면 써줌
+        <li><h4>A B:only-child</h4></li>
+         A의 자식요소가 B하나면 그 B를 선택함, 여러개를 한번에 선택할때 사용하는듯 ex) *:only-child
+        <li><h4>A B:last-child</h4></li>
+         A의 자식요소인 B중 마지막 B를 선택함
+        <li><h4>A:nth-child(number)</h4></li>
+         A 중에서 n번째 A를 선택함 number자리에는 숫자를 넣어줌 ex) 3번째 A -> A:nth-child(3)
+        <li><h4>A:nth-last-child(number)</h4></li>
+         뒤에서부터 n번째를 선택함
+         <li><h4>A:first-of-type</h4></li>
+         A중 첫번째 A를 선택함
+         <li><h4>A:nth-of-type(number)</h4></li>
+         A중 n번째 A를 선택함, number자리에는 숫자가 들어갈 수도 있고 even(짝수), odd(홀수)를 넣어서 여러개를 선택할 수도 있다<br>
+         An+B를 넣어서 B, B+A, B+2A...을 선택할 수도 있다
+         <li><h4>A:last-of-type</h4></li>
+         A중에 마지막을 선택함
+         <li><h4>A:empty</h4></li>
+         A중에 아무것도 없는 태그를 선택함 = 하위태그가 없는것
+         <li><h4>A:not()</h4></li>
+         A중에서 괄호안에 있는 태그를 제외한 A를 선택함, 예시 ex) #css, .css 등
+
+    </ul>
+    <h1>예시</h1>
+    <a href="https://www.youtube.com/channel/UCUj6rrhMTR9pipbAWBAMvUQ">1</a>
     <div>
       111111
     </div>
@@ -30,10 +86,10 @@
       33333333
     </div>
     <div class="k">
-      <h1>111111111</h1>
-      <h1>22222222222</h1>
-      <h1>33333333333</h1>
-      <h2>444444444</h2>
+      <h2>111111111</h2>
+      <h2>22222222222</h2>
+      <h2>33333333333</h2>
+      <h3>444444444</h3>
     </div>
   </body>
 </html>

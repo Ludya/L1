@@ -5,17 +5,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height">
     <link rel="stylesheet" href="style.css">
+    <style>
+      .목차{
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
     <h1>css</h1>
     <div id="lee">
-        <ol>
+        <ol class="목차">
           <li><a href="댓글.html" target="_blank" title="댓글">댓글</a><br></li>
           <li><a href="링크.html" target="_blank" title="링크">링크</a><br></li>
           <li><a href="목차.html" target="_blank" title="목차>목차</a><br></li>
           <li><a href="채팅.html" target="_blank" title="채팅">채팅</a><br></li>
           <li><a href="체크박스.html" target="_blank" title="체크박스">체크박스</a><br></li>
           <li><a href="HTML.html" target="_blank" title="HTML">HTML</a><br></li>
+          <li><a href="선택자.html" target="_blank" title="선택자">선택자</a><br></li>
+          <li>
+            <a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)">폰트<br>
+            </a><div style="DISPLAY: none">
+              <ul>
+                <li><a href="font-size.html" target="_blank">사이즈</a></li>
+                <li>내용</li>
+              </ul>
+            </div>
+          </li>
        </ol>
       <div id="css">
           <h2>css 지정방법</h2><br>
@@ -48,14 +63,7 @@
               3.px : 픽셀<br>
                 &nbsp %, em : 부모 요소에 대한 상대적인 크기, 각각 100%, 1em이 부모요소의 크기<br>
                 &nbsp rem : html요소의 글자 크기에 대한 상대적인 글자 크기<br>
-          <h2>효과의 발동 우선순위</h2><br>
-            <h3>id 선택자>class 선택자>태그 선택자 / 동일한 선택자라면 나중에 쓰인것이 적용된다.</h3><br>
-            1. id 선택자<br>
-            &nbsp 문서에서 1번밖에 쓸 수 없음, 사용형태 ex) #a{} - id="a"<br>
-            2. class 선택자<br>
-            &nbsp 집단을 지정할 수 있음, 사용형태 ex) .a{} - class="a"<br>
-            3. 태그 선택자<br>
-            &nbsp 일반적인 css효과, 사용형태 a{} - 모든 a태그에 적용<br>
+
             <h2>영역을 지정하는 태그</h2>
             div - block 화면 전체를 쓴다<br>
             span - inline 차지하는 부피만큼 쓴다<br>

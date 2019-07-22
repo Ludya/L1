@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height">
+    <title>폰트 종류,속성</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hanalei&display=swap" rel="stylesheet">
+    <style>
+      #nanum{
+        font-size: 3rem;
+        font-family: 'Nanum Pen Script', cursive;
+      }
+      #sunflower{
+        font-size: 3rem;
+        font-family: 'Sunflower', sans-serif;
+      }
+      #Hanalei{
+        font-size: 3rem;
+        font-family: 'Hanalei', cursive;
+      }
+      body{
+        font-size: 1.7rem;
+      }
+      #serif{
+        font-family: serif;
+      }
+      #sans-serif{
+        font-family: sans-serif;
+      }
+      #cursive{
+        font-family: cursive;
+      }
+      #fantasy{
+        font-family: fantasy;
+      }
+      #monospace{
+        font-family: monospace;
+      }
+      h1{
+        font-size: 3.3rem;
+        text-align: center;
+        color: rgb(96, 207, 73);
+      }
+      #bold{
+        font-weight: bold;
+        line-height: 2.3;
+      }
+      #line{
+        line-height: 2.4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>폰트 종류</h1>
+    <p id="nanum">
+      불꽃놀이<br>
+      firework
+    </p>
+    <p id="sunflower">
+      불꽃놀이<br>
+      firework<br>
+    </p>
+    <p id="Hanalei">
+      불꽃놀이<br>
+      firework<br>
+    </p>
+    font-family로 글꼴 종류 지정가능<br>
+    <h2>폰트 예시</h2>
+    font-family: "Times New Roman", Times, serif;<br>
+    처음 폰트가 컴퓨터에 있으면 처음 폰트 지정, 없으면 순서대로 지정, 마지막 폰트는 포괄적인 폰트로 지정<br>
+    <h3>포괄적인 폰트들</h3>
+    <div id="serif">font-family : serif (장식이 있는 폰트)<br></div>
+    <div id="sans-serif">font-family : sans-serif<br></div>
+    <div id="cursive">font-family : cursive (흘림체)<br></div>
+    <div id="fantasy">font-family : fantasy<br></div>
+    <div id="monospace">font-family : monospace (고정폭)<br></div>
+    <p>
+      <a href="https://fonts.google.com/" target="_blank">영어폰트</a><br>
+      <a href="https://fonts.google.com/?subset=korean" target="_blank">한글폰트</a>
+    </p>
+    <div id="bold">폰트굵게<br></div>
+    <div id="line">font-weight: 로 폰트 굵기 설정가능, 주로 bold(굵게)를 이용함<br>
+    line-height: 로 줄간격 설정가능, 1.2가 기본</div>
+    <h2>폰트의 여러 속성 한번에 지정하기</h2>
+    순서를 지켜야하고 font-size와 font-family는 필수<br>
+    font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit; <br>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height">
+<head>
+    <title>함수</title>
+</head>
+<body>
+    <h1>함수</h1>
+    <ul>
+        <script>
+            function arin(){
+                document.write('<li>2-1</l1>')
+                document.write('<li>2-2</l1>')
+            }
+            document.write('<li>1</l1>')
+            arin();
+            document.write('<li>3</l1>')
+            arin();
+        </script>
+    </ul>
+    <h2>매개변수와 인자</h2>
+    <script>
+        function plus(){
+        document.write(1+1+'<br>');
+        }
+        plus();
+        function sum(left, right){
+            document.write(left+right+'<br>');
+        }
+        sum(2,3);
+    </script>
+    <h2>return</h2>
+    <script>
+        function sum2(l,r){
+            return l+r;
+        }
+        document.write(sum2(2,3)+'<br>');
+        document.write('<div style="color:cyan">'+sum2(2,3)+'</div>');
+        document.write('2+3'+'<br>');
+    </script>
+</body>
+</html>

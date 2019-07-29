@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height">
+    <head>
+        <style>
+            #ar{
+                font-size: 1.5rem;
+            }
+        </style>
+        <script>
+            function ca(self){
+                var target = document.querySelector('body');
+                if(self.value === 'black'){
+                    target.style.backgroundColor = 'rgba(0, 0, 0, 0.877)';
+                    target.style.color = 'white';
+                    self.value = 'white'
+                    var arin = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < arin.length){
+                    arin[i].style.color = 'rgb(218, 89, 179)';
+                    i = i + 1;
+                    }
+                }
+                else{
+                    target.style.backgroundColor = 'white';
+                    target.style.color = 'black';
+                    self.value = 'black'
+                    var arin = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < arin.length){
+                    arin[i].style.color = 'blue';
+                    i = i + 1;
+                    }
+                }
+            }
+        </script>
+        <script>
+            function fontt(asd){
+                var target = document.querySelector('body');
+                if(asd.value === 'big'){
+                target.style.fontSize = '2.5rem';
+                asd.value = 'medium'
+                }
+                else if(asd.value === 'medium'){
+                target.style.fontSize = '1.7rem';
+                asd.value = 'small'
+                }
+                else{
+                target.style.fontSize = '1rem';
+                asd.value = 'big'
+                }
+            }
+        </script>
+    <title></title>
+    </head>
+    <body>
+        <h1><a href="https://www.youtube.com/channel/UC-qYkzKFdekoEniRu_FS3zg">OMG</a></h1>
+        <a href="https://www.youtube.com/channel/UCUj6rrhMTR9pipbAWBAMvUQ">calmdown</a><br>
+        <a href="https://twitter.com/wm_ohmygirl">OMG twitter</a><br>
+        테마 : <input id="ar" type="button" value="black" onclick="
+        ca(this);
+        "><br>
+        글자 크기 : <input id="size2" type="button" value="big" onclick="
+        fontt(this);
+        "><br>
+
+        가나다라<br>
+        마바사아<br>
+        자차카타<br>
+        파하<br>
+        <img src="https://dcimg4.dcinside.co.kr/viewimage.php?id=22b5dd3fe2db2aaa&no=24b0d769e1d32ca73cee8efa11d02831b169fb2255dcc071d46251c583f3826e4cb15a2bb6efa0669def7b5c3e5953d5fbd4eb38e22e01bc20e5da0836e881d28fc74d4faea87c07e14a7351bf8802">
+        <video src="https://video.twimg.com/ext_tw_video/1140216352415739905/pu/vid/720x1280/YwbW4vB5cdIK__QL.mp4?tag=10" autoplay loop controls width="400" height="auto"></video><br>
+        테마 : <input id="ar2" type="button" value="black" onclick="
+        ca(this);
+        "><br>
+        글자 크기 : <input id="size2" type="button" value="big" onclick="
+        var target = document.querySelector('body');
+        fontt(this);
+        "><br>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    font:4rem solid;
+    font-family: 'Pacifico', cursive;
+    padding-left: 3rem;
+    margin-bottom: 0rem;
+    padding-bottom: 2rem;
+    margin-top: 0%;
+    display: 
+}
+#title{
+    text-decoration-line: none;
+    color:rgb(0, 0, 0)
+}
+#index{
+    font: 2.5rem solid;
+    font-family: 'Teko', sans-serif;
+    grid-template-columns: 20rem 1fr 10rem;
+    display: grid;           
+}
+#index ol{
+    border-right: 0.2rem cyan solid;
+    border-right: 0.2rem solid cyan;
+    margin:0px;
+    padding:25px;
+    padding-left: 50px;
+}
+#content{
+   font:4rem solid black; 
+   text-align: center;
+   border-right: 0.2rem cyan solid;
+}
+#side{
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+}
+@media(max-width:450px){
+    h1,#title,#index ol,#index,#wel,#ar{
+        display: block;
+        border: none;
+    }
+}
+#ti{
+    display: grid;
+    grid-template-columns:  1fr 3rem;
+    border-bottom: 0.3rem solid cyan; 
+}
+#upside{
+    text-align: right;
+}

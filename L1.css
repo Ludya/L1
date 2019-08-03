@@ -15,7 +15,7 @@ h1{
 #index{
     font: 2.5rem solid;
     font-family: 'Teko', sans-serif;
-    grid-template-columns: 20rem 1fr 10rem;
+    grid-template-columns: 20rem 1fr 15rem;
     display: grid;           
 }
 #index ol{
@@ -31,8 +31,7 @@ h1{
    border-right: 0.2rem cyan solid;
 }
 #side{
-    padding-left: 1rem;
-    padding-top: 0.3rem;
+    padding: 0.5rem;
 }
 @media(max-width:450px){
     h1,#title,#index ol,#index,#wel,#ar{

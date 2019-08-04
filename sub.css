@@ -1,0 +1,16 @@
+#ti{
+    display: grid;
+    grid-template-columns: 5rem 1fr 5rem;
+    border-bottom: 0.3rem solid cyan; 
+   }
+   h2{
+     font-size: 2rem;
+     font-family: 'Pacifico', cursive;
+     text-align: center;
+     background-color: rgb(154,219,232);
+     padding-top: 0.8rem;
+   }
+   #LLLL{
+     text-decoration: none;
+     color: black !important;
+   }
